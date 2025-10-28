@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+🏺 Krisped – Ceramic Product Management App
+Krisped adalah aplikasi mobile sederhana berbasis React Native (Expo) yang digunakan untuk mengelola produk kerajinan keramik.
+Aplikasi ini mendukung CRUD produk, keranjang belanja, serta dark/light mode menggunakan Zustand sebagai state management.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🌟 Fitur Utama 
 
-## Get started
+✅ Manajemen Produk (CRUD)
+Tambah produk baru lengkap dengan nama, harga, dan gambar.
+Edit produk yang sudah ada.
+Hapus produk dari daftar.
 
-1. Install dependencies
+✅ Keranjang Belanja
+Tambahkan produk ke keranjang.
+Hapus satu atau semua produk dari keranjang.
+Total harga otomatis.
 
-   ```bash
-   npm install
-   ```
+✅ Mode Gelap & Terang (Dark/Light Mode)
+Toggle mode tampilan kapan saja tanpa kehilangan data.
+Menggunakan Zustand untuk menyimpan preferensi tema.
 
-2. Start the app
+✅ Navigasi Modern
+Menggunakan Expo Router Tabs Navigation (Home, Cart, About).
+Navigasi cepat antar halaman.
 
-   ```bash
-   npx expo start
-   ```
+✅ UI Responsif & Modern
+Desain bersih dan estetis dengan palet warna coklat dan krem.
+Gambar produk proporsional dan otomatis menyesuaikan tampilan.
 
-In the output, you'll find options to open the app in a
+📱 Tampilan (Preview) :
+- <img width="444" height="838" alt="Screenshot 2025-10-28 223949" src="https://github.com/user-attachments/assets/4541ca3d-d95f-4aef-960f-5e07e50e0177" />
+- <img width="444" height="833" alt="image" src="https://github.com/user-attachments/assets/ccde0e91-2b51-469a-934a-86e87b93d8a4" />
+- <img width="423" height="840" alt="image" src="https://github.com/user-attachments/assets/7f49c9d7-b4a2-469d-9e0d-e06dfc88632c" />
+- <img width="454" height="838" alt="image" src="https://github.com/user-attachments/assets/94634b68-d093-48af-8e48-02388be5562a" />
+- <img width="448" height="843" alt="image" src="https://github.com/user-attachments/assets/69131272-8e06-42a9-a0d0-8628a17ba706" />
+- <img width="426" height="838" alt="image" src="https://github.com/user-attachments/assets/367a8c2b-21bc-420b-a56d-09ca41160f48" />
+- <img width="433" height="837" alt="image" src="https://github.com/user-attachments/assets/d4e71c87-0026-444a-816d-4bbbef95e953" />
+- <img width="415" height="827" alt="image" src="https://github.com/user-attachments/assets/fe9122a0-9180-42a5-8ebd-beb2fba16e6b" />
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🧩 Teknologi yang Digunakan
+⚛️ React Native (Expo)
+🧭 Expo Router (navigasi multi-tab)
+🗂 Zustand (state management)
+💡 TypeScript
+🎨 React Native StyleSheet
+📸 Expo Image Picker
 
-## Get a fresh project
 
-When you're ready, run:
+# 1️⃣ Clone repository
+git clone https://github.com/username/krisped-app.git
+# 2️⃣ Masuk ke folder proyek
+cd krisped-app
+# 3️⃣ Install dependencies
+npm install
+# atau
+yarn install
+# 4️⃣ Jalankan aplikasi
+npx expo start
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+krisped-app/
+│
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx         # Halaman Home
+│   │   ├── cart.tsx          # Halaman Cart
+│   │   ├── about.tsx         # Halaman About
+│   │   └── _layout.tsx       # Layout navigasi tab
+│   ├── products/
+│   │   ├── [id].tsx          # Detail produk
+│   │   ├── edit.tsx          # Edit produk
+│   │   └── add.tsx           # Tambah produk
+│
+├── store/
+│   ├── useProductStore.ts    # State produk (CRUD)
+│   ├── useCartStore.ts       # State keranjang
+│   └── useThemeStore.ts      # State tema dark/light
+│
+├── assets/
+│   ├── images/
+│   │   └── product/          # Gambar produk & logo
+│
+├── docs/
+│   └── screenshot-home.png   # Screenshot untuk README
+│
+└── README.md
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
