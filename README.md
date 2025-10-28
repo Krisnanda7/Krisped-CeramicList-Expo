@@ -34,8 +34,8 @@ Gambar produk proporsional dan otomatis menyesuaikan tampilan.
 - <img width="448" height="843" alt="image" src="https://github.com/user-attachments/assets/69131272-8e06-42a9-a0d0-8628a17ba706" />
 - <img width="426" height="838" alt="image" src="https://github.com/user-attachments/assets/367a8c2b-21bc-420b-a56d-09ca41160f48" />
 - <img width="433" height="837" alt="image" src="https://github.com/user-attachments/assets/d4e71c87-0026-444a-816d-4bbbef95e953" />
-- <img width="443" height="847" alt="image" src="https://github.com/user-attachments/assets/a6784890-f6f1-4108-9b54-49156a2fd527" />
 - <img width="415" height="827" alt="image" src="https://github.com/user-attachments/assets/fe9122a0-9180-42a5-8ebd-beb2fba16e6b" />
+- <img width="443" height="847" alt="image" src="https://github.com/user-attachments/assets/a6784890-f6f1-4108-9b54-49156a2fd527" />
 - <img width="442" height="834" alt="image" src="https://github.com/user-attachments/assets/73790ee2-d3a1-4257-91dc-98a4be0ec901" />
 - <img width="434" height="835" alt="image" src="https://github.com/user-attachments/assets/7aae3087-4347-4b01-98b7-873cf2bb61a8" />
 - <img width="450" height="838" alt="image" src="https://github.com/user-attachments/assets/e3d2dff4-6463-48fe-940f-7841599c79ad" />
