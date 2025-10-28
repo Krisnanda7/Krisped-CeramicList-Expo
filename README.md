@@ -9,18 +9,20 @@ I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 
 
 📱 TAMPILAN (PREVIEW) :
-- <img width="460" height="847" alt="Screenshot 2025-10-29 031650" src="https://github.com/user-attachments/assets/c623dfad-defb-4ae0-b3b7-28c1338f0e38" />
-- <img width="446" height="845" alt="Screenshot 2025-10-29 031713" src="https://github.com/user-attachments/assets/df841429-45c8-449f-956d-8312c7a80eda" />
-- <img width="445" height="847" alt="Screenshot 2025-10-29 031722" src="https://github.com/user-attachments/assets/ac981423-fb39-49f1-9293-a9cdd03b7e48" />
-- <img width="441" height="835" alt="Screenshot 2025-10-29 031728" src="https://github.com/user-attachments/assets/2bef267b-f3b8-422b-8a0a-3162412e16fa" />
-- <img width="443" height="838" alt="Screenshot 2025-10-29 031733" src="https://github.com/user-attachments/assets/d344399b-c4bd-4049-bb1a-36ec3113d971" />
-- <img width="427" height="848" alt="Screenshot 2025-10-29 031752" src="https://github.com/user-attachments/assets/5b0eb196-20f0-45bf-8085-1c06d08ccf8d" />
-- <img width="450" height="861" alt="Screenshot 2025-10-29 031758" src="https://github.com/user-attachments/assets/079dbe29-1580-45d7-a257-e87082acc798" />
-- <img width="448" height="859" alt="Screenshot 2025-10-29 031809" src="https://github.com/user-attachments/assets/15801e14-9707-4d43-80ea-0fa0b297d292" />
-- <img width="427" height="851" alt="Screenshot 2025-10-29 031845" src="https://github.com/user-attachments/assets/72cb06c7-4659-41ec-838b-363a3c8b8173" />
-- <img width="444" height="867" alt="Screenshot 2025-10-29 031910" src="https://github.com/user-attachments/assets/1743295d-deb8-4dfe-b43e-8f8a1819546e" />
-- <img width="448" height="844" alt="Screenshot 2025-10-29 031934" src="https://github.com/user-attachments/assets/a1caa377-60bd-417b-820b-9489fc8f54f2" />
-- <img width="427" height="846" alt="Screenshot 2025-10-29 031309" src="https://github.com/user-attachments/assets/06d6d5ac-2f6b-48b1-bf97-03056a6eb606" />
+- <img width="427" height="846" alt="Screenshot 2025-10-29 031309" src="https://github.com/user-attachments/assets/c88ba930-64c7-43fb-8794-dffc1fae1918" />
+- <img width="460" height="847" alt="Screenshot 2025-10-29 031650" src="https://github.com/user-attachments/assets/2b3186f2-1cb7-425e-8a11-77d6d6da6a31" />
+- <img width="446" height="845" alt="Screenshot 2025-10-29 031713" src="https://github.com/user-attachments/assets/6e6a1678-f201-43b7-9f9f-8ca0d05aad12" />
+- <img width="445" height="847" alt="Screenshot 2025-10-29 031722" src="https://github.com/user-attachments/assets/d4842978-723c-4473-9f01-0f092b4d1423" />
+- <img width="441" height="835" alt="Screenshot 2025-10-29 031728" src="https://github.com/user-attachments/assets/802d9b9a-9894-49e8-ad8a-83dfe9537259" />
+- <img width="443" height="838" alt="Screenshot 2025-10-29 031733" src="https://github.com/user-attachments/assets/fef8b86a-1ac1-4ca2-9d0c-888320b2e42d" />
+- <img width="427" height="848" alt="Screenshot 2025-10-29 031752" src="https://github.com/user-attachments/assets/3790b3fc-9436-4e93-add2-7d61c9da1cf5" />
+- <img width="450" height="861" alt="Screenshot 2025-10-29 031758" src="https://github.com/user-attachments/assets/bd431180-5621-488e-9eb1-d54c276451ec" />
+- <img width="448" height="859" alt="Screenshot 2025-10-29 031809" src="https://github.com/user-attachments/assets/a83830cd-5ce4-4ceb-b819-6d8c25fad25e" />
+- <img width="427" height="851" alt="Screenshot 2025-10-29 031845" src="https://github.com/user-attachments/assets/e558304e-e264-4bb5-8f54-4e4b53657192" />
+- <img width="444" height="867" alt="Screenshot 2025-10-29 031910" src="https://github.com/user-attachments/assets/68223652-8a5b-42fd-904d-ba3c97401d3b" />
+- <img width="448" height="844" alt="Screenshot 2025-10-29 031934" src="https://github.com/user-attachments/assets/aa9f7f38-0e34-4117-9ffb-2661614c5668" />
+
+
 
 
   🧩 TEKNOLOGI YANG DIGUNAKAN 
