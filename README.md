@@ -1,55 +1,29 @@
-Nama : I Dewa Gede Mas Bagus Krisnanda (2301020058)
+I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 
-🏺 Krisped – Ceramic Product Management App
+🏺 KRISPED - PRODUCT MANAGEMENT CERAMIC APP 
 Krisped adalah aplikasi mobile sederhana berbasis React Native (Expo) yang digunakan untuk mengelola produk kerajinan keramik.
 Aplikasi ini mendukung CRUD produk, keranjang belanja, serta dark/light mode menggunakan Zustand sebagai state management.
 
-🌟 Fitur Utama 
-
-✅ Manajemen Produk (CRUD)
-Tambah produk baru lengkap dengan nama, harga, dan gambar.
-Edit produk yang sudah ada.
-Hapus produk dari daftar.
-
-✅ Keranjang Belanja
-Tambahkan produk ke keranjang.
-Hapus satu atau semua produk dari keranjang.
-Total harga otomatis.
-
-✅ Mode Gelap & Terang (Dark/Light Mode)
-Toggle mode tampilan kapan saja tanpa kehilangan data.
-Menggunakan Zustand untuk menyimpan preferensi tema.
-
-✅ Navigasi Modern
-Menggunakan Expo Router Tabs Navigation (Home, Cart, About).
-Navigasi cepat antar halaman.
-
-✅ UI Responsif & Modern
-Desain bersih dan estetis dengan palet warna coklat dan krem.
-Gambar produk proporsional dan otomatis menyesuaikan tampilan.
+🚀 Fitur Utama 
+- <img width="793" height="495" alt="image" src="https://github.com/user-attachments/assets/0494f29a-114b-4e4a-be8f-ca7a2ff2a14b" />
 
 
 📱 TAMPILAN (PREVIEW) :
-- <img width="444" height="838" alt="Screenshot 2025-10-28 223949" src="https://github.com/user-attachments/assets/4541ca3d-d95f-4aef-960f-5e07e50e0177" />
-- <img width="444" height="833" alt="image" src="https://github.com/user-attachments/assets/ccde0e91-2b51-469a-934a-86e87b93d8a4" />
-- <img width="423" height="840" alt="image" src="https://github.com/user-attachments/assets/7f49c9d7-b4a2-469d-9e0d-e06dfc88632c" />
-- <img width="454" height="838" alt="image" src="https://github.com/user-attachments/assets/94634b68-d093-48af-8e48-02388be5562a" />
-- <img width="448" height="843" alt="image" src="https://github.com/user-attachments/assets/69131272-8e06-42a9-a0d0-8628a17ba706" />
-- <img width="426" height="838" alt="image" src="https://github.com/user-attachments/assets/367a8c2b-21bc-420b-a56d-09ca41160f48" />
-- <img width="433" height="837" alt="image" src="https://github.com/user-attachments/assets/d4e71c87-0026-444a-816d-4bbbef95e953" />
-- <img width="415" height="827" alt="image" src="https://github.com/user-attachments/assets/fe9122a0-9180-42a5-8ebd-beb2fba16e6b" />
-- <img width="443" height="847" alt="image" src="https://github.com/user-attachments/assets/a6784890-f6f1-4108-9b54-49156a2fd527" />
-- <img width="442" height="834" alt="image" src="https://github.com/user-attachments/assets/73790ee2-d3a1-4257-91dc-98a4be0ec901" />
-- <img width="434" height="835" alt="image" src="https://github.com/user-attachments/assets/7aae3087-4347-4b01-98b7-873cf2bb61a8" />
-- <img width="450" height="838" alt="image" src="https://github.com/user-attachments/assets/e3d2dff4-6463-48fe-940f-7841599c79ad" />
-- <img width="452" height="851" alt="image" src="https://github.com/user-attachments/assets/021ef13c-546f-43d0-bcb4-5ec0caf164b5" />
+- <img width="460" height="847" alt="Screenshot 2025-10-29 031650" src="https://github.com/user-attachments/assets/c623dfad-defb-4ae0-b3b7-28c1338f0e38" />
+- <img width="446" height="845" alt="Screenshot 2025-10-29 031713" src="https://github.com/user-attachments/assets/df841429-45c8-449f-956d-8312c7a80eda" />
+- <img width="445" height="847" alt="Screenshot 2025-10-29 031722" src="https://github.com/user-attachments/assets/ac981423-fb39-49f1-9293-a9cdd03b7e48" />
+- <img width="441" height="835" alt="Screenshot 2025-10-29 031728" src="https://github.com/user-attachments/assets/2bef267b-f3b8-422b-8a0a-3162412e16fa" />
+- <img width="443" height="838" alt="Screenshot 2025-10-29 031733" src="https://github.com/user-attachments/assets/d344399b-c4bd-4049-bb1a-36ec3113d971" />
+- <img width="427" height="848" alt="Screenshot 2025-10-29 031752" src="https://github.com/user-attachments/assets/5b0eb196-20f0-45bf-8085-1c06d08ccf8d" />
+- <img width="450" height="861" alt="Screenshot 2025-10-29 031758" src="https://github.com/user-attachments/assets/079dbe29-1580-45d7-a257-e87082acc798" />
+- <img width="448" height="859" alt="Screenshot 2025-10-29 031809" src="https://github.com/user-attachments/assets/15801e14-9707-4d43-80ea-0fa0b297d292" />
+- <img width="427" height="851" alt="Screenshot 2025-10-29 031845" src="https://github.com/user-attachments/assets/72cb06c7-4659-41ec-838b-363a3c8b8173" />
+- <img width="444" height="867" alt="Screenshot 2025-10-29 031910" src="https://github.com/user-attachments/assets/1743295d-deb8-4dfe-b43e-8f8a1819546e" />
+- <img width="448" height="844" alt="Screenshot 2025-10-29 031934" src="https://github.com/user-attachments/assets/a1caa377-60bd-417b-820b-9489fc8f54f2" />
+- <img width="427" height="846" alt="Screenshot 2025-10-29 031309" src="https://github.com/user-attachments/assets/06d6d5ac-2f6b-48b1-bf97-03056a6eb606" />
 
 
-
-
-
-
-🧩 Teknologi yang Digunakan
+  🧩 TEKNOLOGI YANG DIGUNAKAN 
 - ⚛️ React Native (Expo)
 - 🧭 Expo Router (navigasi multi-tab)
 - 🗂 Zustand (state management)
@@ -60,7 +34,6 @@ Gambar produk proporsional dan otomatis menyesuaikan tampilan.
 
 📂 Struktur Folder 
 - <img width="767" height="640" alt="Screenshot 2025-10-28 225751" src="https://github.com/user-attachments/assets/890e5d06-3a82-46ed-81ec-54d5ed0d6b7e" />
-
 
 
 
