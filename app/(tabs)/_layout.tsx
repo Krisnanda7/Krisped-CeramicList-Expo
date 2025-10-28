@@ -31,20 +31,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="listProduct"
+        options={{
+          title: "Products",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="flask-outline" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="cart"
         options={{
           title: "Cart",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="cart" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="about"
-        options={{
-          title: "About",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="information-circle" color={color} size={size} />
           ),
         }}
       />

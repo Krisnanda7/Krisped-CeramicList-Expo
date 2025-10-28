@@ -78,7 +78,6 @@ export default function ProductDetail() {
   return (
     <View style={styles.container}>
       {product.image && <Image source={product.image} style={styles.image} />}
-
       <Text style={styles.name}>{product.name}</Text>
       <Text style={styles.price}>
         Rp {product.price.toLocaleString("id-ID")}

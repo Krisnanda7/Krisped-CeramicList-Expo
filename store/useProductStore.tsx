@@ -4,6 +4,7 @@ import { create } from "zustand";
 type Product = {
   id: string;
   name: string;
+  description?: string;
   price: number;
   image: any; // bisa require(...) dari assets
 };
@@ -21,6 +22,7 @@ export const useProductStore = create<ProductStore>((set) => ({
     {
       id: uuidv4(),
       name: "Vase Elegant",
+      description: "Vas bunga dengan desain elegan untuk dekorasi rumah Anda",
       price: 250000,
       image: require("../assets/images/product/vase.jpeg"),
     },

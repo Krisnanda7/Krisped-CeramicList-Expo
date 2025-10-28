@@ -1,86 +1,47 @@
 import { useThemeStore } from "@/store/useThemeStore";
 import { Link } from "expo-router";
-import {
-  FlatList,
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import { useProductStore } from "../../store/useProductStore";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function HomeScreen() {
-  const { products } = useProductStore();
+export default function AboutHome() {
   const { isDarkMode, toggleTheme } = useThemeStore();
 
   const backgroundColor = isDarkMode ? "#121212" : "#F5F3F1";
   const textColor = isDarkMode ? "#FFFFFF" : "#3E2723";
-  const cardColor = isDarkMode ? "#1E1E1E" : "#FFFFFF";
-  const priceColor = isDarkMode ? "#FFD700" : "#8B4513";
+  const subTextColor = isDarkMode ? "#BDBDBD" : "#4E342E";
+  const footerColor = isDarkMode ? "#A1887F" : "#6D4C41";
 
   return (
     <View style={[styles.container, { backgroundColor }]}>
-      {/* toggle theme  */}
-      <View style={styles.header}>
+      <View style={styles.themeToggle}>
         <TouchableOpacity onPress={toggleTheme}>
-          <Text style={{ color: textColor, fontWeight: "600" }}>
+          <Text style={[styles.themeText, { color: textColor }]}>
             {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
           </Text>
         </TouchableOpacity>
       </View>
 
-      {/* Logo */}
       <Image
         source={require("../../assets/images/product/Logo.png")}
         style={styles.logo}
       />
 
-      {/* Daftar produk */}
-      {products.length === 0 ? (
-        <Text style={{ textAlign: "center", marginTop: 20, color: textColor }}>
-          Belum ada produk. Tambahkan produk baru.
-        </Text>
-      ) : (
-        <FlatList
-          data={products}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              style={[styles.card, { backgroundColor: cardColor }]}
-            >
-              <Link
-                href={{
-                  pathname: "/products/[id]",
-                  params: { id: item.id },
-                }}
-                asChild
-              >
-                <View>
-                  <View style={styles.imageWrapper}>
-                    <Image source={item.image} style={styles.image} />
-                  </View>
-                  <View style={styles.info}>
-                    <Text style={[styles.name, { color: textColor }]}>
-                      {item.name}
-                    </Text>
-                    <Text style={[styles.price, { color: priceColor }]}>
-                      Rp {item.price.toLocaleString("id-ID")}
-                    </Text>
-                  </View>
-                </View>
-              </Link>
-            </TouchableOpacity>
-          )}
-        />
-      )}
+      <Text style={[styles.text, { color: subTextColor }]}>
+        Selamat datang di Krisped! Kami berkomitmen untuk menyediakan produk
+        ceramic berkualitas tinggi yang menggabungkan keindahan dan
+        fungsionalitas. Jelajahi koleksi kami dan temukan karya seni yang
+        sempurna untuk rumah Anda.
+      </Text>
 
-      {/*  tambah produk */}
-      <Link href="/add" asChild>
+      {/* 🔹 Tombol menuju halaman produk */}
+      <Link href="/listProduct" asChild>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>ADD NEW PRODUCT</Text>
+          <Text style={styles.buttonText}>Lihat Produk Kami</Text>
         </TouchableOpacity>
       </Link>
+
+      <Text style={[styles.footer, { color: footerColor }]}>
+        © 2025 Krisped Studio
+      </Text>
     </View>
   );
 }
@@ -88,68 +49,31 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 24,
   },
-  header: {
-    alignItems: "flex-end",
-    marginBottom: 8,
+  themeToggle: {
+    alignSelf: "flex-end",
+    position: "absolute",
+    top: 50,
+    right: 20,
   },
-  logo: {
-    alignSelf: "center",
-    resizeMode: "contain",
-    width: 250,
-  },
-  card: {
-    marginVertical: 8,
-    borderRadius: 14,
-    overflow: "hidden",
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 4,
-    elevation: 3,
-  },
-  imageWrapper: {
-    width: "100%",
-    height: 140,
-    overflow: "hidden",
-    borderTopLeftRadius: 14,
-    borderTopRightRadius: 14,
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-    resizeMode: "cover",
-  },
-  info: {
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-  },
-  name: {
+  themeText: { fontWeight: "600", fontSize: 14 },
+  logo: { resizeMode: "contain", marginBottom: 12 },
+  text: {
     fontSize: 15,
-    fontWeight: "600",
-  },
-  price: {
-    marginTop: 4,
-    fontWeight: "500",
+    textAlign: "center",
+    lineHeight: 22,
+    marginBottom: 30,
+    paddingHorizontal: 10,
   },
   button: {
     backgroundColor: "#8B4513",
-    paddingVertical: 14,
+    paddingVertical: 12,
+    paddingHorizontal: 24,
     borderRadius: 10,
-    marginTop: 20,
-    marginHorizontal: 20,
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 3,
-    elevation: 2,
   },
-  buttonText: {
-    color: "#fff",
-    textAlign: "center",
-    fontWeight: "700",
-    letterSpacing: 0.5,
-    fontSize: 16,
-  },
+  buttonText: { color: "#fff", fontWeight: "700", fontSize: 16 },
+  footer: { fontSize: 12, marginTop: 20 },
 });
