@@ -3,9 +3,11 @@ I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 🏺 KRISPED PRODUCT MANAGEMENT CERAMIC APP 
 - Krisped adalah aplikasi mobile sederhana berbasis React Native (Expo) yang digunakan untuk mengelola produk kerajinan keramik.
 - Aplikasi ini mendukung CRUD produk, keranjang belanja, serta dark/light mode menggunakan Zustand sebagai state management.
+  <br>
 
 🚀 Fitur Utama 
 - <img width="793" height="495" alt="image" src="https://github.com/user-attachments/assets/0494f29a-114b-4e4a-be8f-ca7a2ff2a14b" />
+<br>
 
 
 📱 TAMPILAN (PREVIEW) :
@@ -21,7 +23,7 @@ I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 - <img width="427" height="851" alt="Screenshot 2025-10-29 031845" src="https://github.com/user-attachments/assets/e558304e-e264-4bb5-8f54-4e4b53657192" />
 - <img width="444" height="867" alt="Screenshot 2025-10-29 031910" src="https://github.com/user-attachments/assets/68223652-8a5b-42fd-904d-ba3c97401d3b" />
 - <img width="448" height="844" alt="Screenshot 2025-10-29 031934" src="https://github.com/user-attachments/assets/aa9f7f38-0e34-4117-9ffb-2661614c5668" />
-
+<br>
 
 
 
@@ -32,11 +34,12 @@ I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 - 💡 TypeScript
 - 🎨 React Native StyleSheet
 - 📸 Expo Image Picker
+- <br>
 
 
 📂 Struktur Folder 
 - <img width="767" height="640" alt="Screenshot 2025-10-28 225751" src="https://github.com/user-attachments/assets/890e5d06-3a82-46ed-81ec-54d5ed0d6b7e" />
-
+<br>
 
 
 # 1️⃣ Clone repository
