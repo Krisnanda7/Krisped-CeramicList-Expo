@@ -58,34 +58,8 @@ Gambar produk proporsional dan otomatis menyesuaikan tampilan.
 - 📸 Expo Image Picker
 
 
-
-
-krisped-app/
-│
-├── app/
-│   ├── (tabs)/
-│   │   ├── index.tsx         # Halaman Home
-│   │   ├── cart.tsx          # Halaman Cart
-│   │   ├── about.tsx         # Halaman About
-│   │   └── _layout.tsx       # Layout navigasi tab
-│   ├── products/
-│   │   ├── [id].tsx          # Detail produk
-│   │   ├── edit.tsx          # Edit produk
-│   │   └── add.tsx           # Tambah produk
-│
-├── store/
-│   ├── useProductStore.ts    # State produk (CRUD)
-│   ├── useCartStore.ts       # State keranjang
-│   └── useThemeStore.ts      # State tema dark/light
-│
-├── assets/
-│   ├── images/
-│   │   └── product/          # Gambar produk & logo
-│
-├── docs/
-│   └── screenshot-home.png   # Screenshot untuk README
-│
-└── README.md
+📂 Struktur Folder 
+- <img width="767" height="640" alt="Screenshot 2025-10-28 225751" src="https://github.com/user-attachments/assets/890e5d06-3a82-46ed-81ec-54d5ed0d6b7e" />
 
 
 
