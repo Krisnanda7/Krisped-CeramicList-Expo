@@ -14,7 +14,7 @@ export default function ProductDetail() {
   const { id } = useLocalSearchParams();
   const router = useRouter();
   const { products, deleteProduct } = useProductStore();
-  const { addToCart } = useCartStore(); // ⬅️ pakai store keranjang
+  const { addToCart } = useCartStore();
 
   const productId = Array.isArray(id) ? id[0] : id;
   const product = products.find((p) => p.id === productId);

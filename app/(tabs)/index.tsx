@@ -38,7 +38,6 @@ export default function HomeScreen() {
                 asChild
               >
                 <View>
-                  {/* ✅ FIX: pakai source={item.image}, bukan uri */}
                   <Image source={item.image} style={styles.image} />
                   <Text style={styles.name}>{item.name}</Text>
                   <Text style={styles.price}>
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: "#F5F3F1", // warna latar lembut seperti keramik
+    backgroundColor: "#F5F3F1",
   },
   logo: {
     // width: 120,
@@ -77,7 +76,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "700",
-    color: "#8B4513", // warna coklat utama
+    color: "#8B4513",
     textAlign: "center",
     marginBottom: 4,
   },
@@ -119,7 +118,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   button: {
-    backgroundColor: "#8B4513", // ganti dari biru ke warna logo
+    backgroundColor: "#8B4513",
     paddingVertical: 14,
     borderRadius: 10,
     marginTop: 25,

@@ -5,11 +5,11 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: false, // 👉 ini menyembunyikan teks "(tabs)" dan "Home Page"
-        tabBarActiveTintColor: "#8B4513", // warna aktif sesuai tema Krisped
-        tabBarInactiveTintColor: "#BCAAA4", // warna abu lembut
+        headerShown: false,
+        tabBarActiveTintColor: "#8B4513",
+        tabBarInactiveTintColor: "#BCAAA4",
         tabBarStyle: {
-          backgroundColor: "#F5F3F1", // warna latar bawah tab
+          backgroundColor: "#F5F3F1",
           borderTopWidth: 0.5,
           borderTopColor: "#E0E0E0",
           height: 60,
@@ -24,7 +24,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home", // teks di tab bar bawah, bukan di header
+          title: "Home",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" color={color} size={size} />
           ),
