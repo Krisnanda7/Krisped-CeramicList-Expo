@@ -34,7 +34,7 @@ I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 - 💡 TypeScript
 - 🎨 React Native StyleSheet
 - 📸 Expo Image Picker
-- <br>
+  <br>
 
 
 📂 Struktur Folder 
