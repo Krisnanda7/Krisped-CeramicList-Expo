@@ -1,4 +1,4 @@
-I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
+- I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 
 🏺 KRISPED PRODUCT MANAGEMENT CERAMIC APP 
 - Krisped adalah aplikasi mobile sederhana berbasis React Native (Expo) yang digunakan untuk mengelola produk kerajinan keramik.
@@ -38,7 +38,7 @@ I DEWA GEDE MAS BAGUS KRISNANDA (2301020058)
 
 
 📂 Struktur Folder 
-- <img width="767" height="640" alt="Screenshot 2025-10-28 225751" src="https://github.com/user-attachments/assets/890e5d06-3a82-46ed-81ec-54d5ed0d6b7e" />
+- <img width="590" height="714" alt="image" src="https://github.com/user-attachments/assets/dffe218a-330f-42ba-87dc-e67ea0f504b9" />
 <br>
 
 
