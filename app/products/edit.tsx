@@ -1,8 +1,9 @@
 import * as ImagePicker from "expo-image-picker";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
-  Alert,
+  Animated,
+  Easing,
   Image,
   StyleSheet,
   Text,
@@ -23,6 +24,10 @@ export default function EditProductScreen() {
   const [name, setName] = useState(existing?.name || "");
   const [price, setPrice] = useState(existing?.price?.toString() || "");
   const [image, setImage] = useState(existing?.image || null);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const popupOpacity = useRef(new Animated.Value(0)).current;
+  const popupScale = useRef(new Animated.Value(0.8)).current;
 
   const pickImage = async () => {
     const result = await ImagePicker.launchImageLibraryAsync({
@@ -34,7 +39,7 @@ export default function EditProductScreen() {
 
   const handleUpdate = () => {
     if (!name || !price || !image) {
-      Alert.alert("Harap isi semua data");
+      showTemporaryPopup("Harap isi semua data", false);
       return;
     }
 
@@ -44,9 +49,51 @@ export default function EditProductScreen() {
       image,
     });
 
-    Alert.alert("Berhasil", "Produk berhasil diperbarui!");
-    router.back();
+    showTemporaryPopup("Produk berhasil diperbarui!", true);
   };
+
+  const showTemporaryPopup = (message: string, success: boolean) => {
+    setPopupMessage(message);
+    setPopupSuccess(success);
+    setShowPopup(true);
+
+    // animasi muncul
+    Animated.parallel([
+      Animated.timing(popupOpacity, {
+        toValue: 1,
+        duration: 200,
+        useNativeDriver: true,
+      }),
+      Animated.spring(popupScale, {
+        toValue: 1,
+        friction: 6,
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // hilang  setelah 1.8 detik
+    setTimeout(() => {
+      Animated.parallel([
+        Animated.timing(popupOpacity, {
+          toValue: 0,
+          duration: 200,
+          easing: Easing.ease,
+          useNativeDriver: true,
+        }),
+        Animated.timing(popupScale, {
+          toValue: 0.8,
+          duration: 200,
+          useNativeDriver: true,
+        }),
+      ]).start(() => {
+        setShowPopup(false);
+        if (success) router.back(); // kembali ke halaman sebelumnya jika sukses
+      });
+    }, 1800);
+  };
+
+  const [popupMessage, setPopupMessage] = useState("");
+  const [popupSuccess, setPopupSuccess] = useState(true);
 
   return (
     <View style={styles.container}>
@@ -81,6 +128,28 @@ export default function EditProductScreen() {
       <TouchableOpacity onPress={handleUpdate} style={styles.button}>
         <Text style={styles.buttonText}>SIMPAN PERUBAHAN</Text>
       </TouchableOpacity>
+
+      {/* 🔹 Popup animasi */}
+      {showPopup && (
+        <Animated.View
+          style={[
+            styles.popupContainer,
+            {
+              opacity: popupOpacity,
+              transform: [{ scale: popupScale }],
+            },
+          ]}
+        >
+          <View
+            style={[
+              styles.popup,
+              { backgroundColor: popupSuccess ? "#4CAF50" : "#C62828" },
+            ]}
+          >
+            <Text style={styles.popupText}>{popupMessage}</Text>
+          </View>
+        </Animated.View>
+      )}
     </View>
   );
 }
@@ -151,5 +220,31 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     fontSize: 16,
     letterSpacing: 0.5,
+  },
+  popupContainer: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.25)",
+  },
+  popup: {
+    paddingVertical: 18,
+    paddingHorizontal: 28,
+    borderRadius: 14,
+    shadowColor: "#000",
+    shadowOpacity: 0.25,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    elevation: 4,
+  },
+  popupText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "600",
+    textAlign: "center",
   },
 });

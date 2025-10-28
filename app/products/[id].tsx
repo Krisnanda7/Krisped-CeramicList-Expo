@@ -1,20 +1,47 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
-  Alert,
   Image,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
+  Modal,
+  Animated,
+  Easing,
 } from "react-native";
 import { useProductStore } from "../../store/useProductStore";
 import { useCartStore } from "../../store/useStore";
+import { useState, useRef } from "react";
 
 export default function ProductDetail() {
   const { id } = useLocalSearchParams();
   const router = useRouter();
   const { products, deleteProduct } = useProductStore();
   const { addToCart } = useCartStore();
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+
+  const showPopup = (message: string) => {
+    setModalMessage(message);
+    setModalVisible(true);
+
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 200,
+      easing: Easing.ease,
+      useNativeDriver: true,
+    }).start(() => {
+      setTimeout(() => {
+        Animated.timing(fadeAnim, {
+          toValue: 0,
+          duration: 200,
+          useNativeDriver: true,
+        }).start(() => setModalVisible(false));
+      }, 1500);
+    });
+  };
 
   const productId = Array.isArray(id) ? id[0] : id;
   const product = products.find((p) => p.id === productId);
@@ -34,7 +61,18 @@ export default function ProductDetail() {
       price: product.price,
       image: product.image,
     });
-    Alert.alert("Berhasil", "Produk ditambahkan ke keranjang");
+    showPopup("✅ Produk berhasil ditambahkan ke keranjang!");
+  };
+
+  const handleEdit = () => {
+    showPopup("✏️ Membuka halaman edit...");
+    setTimeout(() => router.push(`/products/edit?id=${product.id}`), 800);
+  };
+
+  const handleDelete = () => {
+    deleteProduct(product.id);
+    showPopup("🗑️ Produk berhasil dihapus!");
+    setTimeout(() => router.back(), 800);
   };
 
   return (
@@ -50,23 +88,22 @@ export default function ProductDetail() {
         <Text style={styles.buttonText}>+ Tambah ke Keranjang</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity
-        style={styles.buttonSecondary}
-        onPress={() => router.push(`/products/edit?id=${product.id}`)}
-      >
+      <TouchableOpacity style={styles.buttonSecondary} onPress={handleEdit}>
         <Text style={styles.buttonText}>✏️ Edit Produk</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity
-        style={styles.buttonDelete}
-        onPress={() => {
-          deleteProduct(product.id);
-          Alert.alert("Dihapus", "Produk berhasil dihapus");
-          router.back();
-        }}
-      >
+      <TouchableOpacity style={styles.buttonDelete} onPress={handleDelete}>
         <Text style={styles.buttonText}>🗑️ Hapus Produk</Text>
       </TouchableOpacity>
+
+      {/* Pop-up animasi */}
+      <Modal transparent visible={modalVisible} animationType="none">
+        <View style={styles.modalOverlay}>
+          <Animated.View style={[styles.modalContent, { opacity: fadeAnim }]}>
+            <Text style={styles.modalText}>{modalMessage}</Text>
+          </Animated.View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -97,4 +134,29 @@ const styles = StyleSheet.create({
     marginVertical: 6,
   },
   buttonText: { color: "#fff", fontWeight: "600", textAlign: "center" },
+
+  // Popup styles
+  modalOverlay: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.4)",
+  },
+  modalContent: {
+    backgroundColor: "#fff",
+    paddingVertical: 18,
+    paddingHorizontal: 24,
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOpacity: 0.3,
+    shadowOffset: { width: 0, height: 3 },
+    shadowRadius: 6,
+    elevation: 6,
+  },
+  modalText: {
+    color: "#333",
+    fontWeight: "600",
+    fontSize: 16,
+    textAlign: "center",
+  },
 });

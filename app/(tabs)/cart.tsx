@@ -1,26 +1,46 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  Image,
-  FlatList,
-} from "react-native";
+import { useThemeStore } from "@/store/useThemeStore";
 import { useRouter } from "expo-router";
+import {
+  FlatList,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useCartStore } from "../../store/useStore";
 
 export default function Cart() {
   const router = useRouter();
   const { cart, removeFromCart, clearCart } = useCartStore();
+  const { isDarkMode, toggleTheme } = useThemeStore();
+
+  // Theme colors
+  const backgroundColor = isDarkMode ? "#121212" : "#F5F3F1";
+  const textColor = isDarkMode ? "#FFFFFF" : "#3E2723";
+  const cardColor = isDarkMode ? "#1E1E1E" : "#FFFFFF";
+  const secondaryText = isDarkMode ? "#BDBDBD" : "#8B6B61";
 
   if (cart.length === 0) {
     return (
-      <View style={styles.container}>
-        <Text style={styles.icon}>🛒</Text>
-        <Text style={styles.title}>Keranjang Kosong</Text>
-        <Text style={styles.subtitle}>
+      <View style={[styles.container, { backgroundColor }]}>
+        {/* Tombol toggle theme */}
+        <View style={{ alignItems: "flex-end", marginBottom: 10 }}>
+          <TouchableOpacity onPress={toggleTheme}>
+            <Text style={[styles.themeText, { color: textColor }]}>
+              {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        <Text style={[styles.icon, { color: textColor }]}>🛒</Text>
+        <Text style={[styles.title, { color: textColor }]}>
+          Keranjang Kosong
+        </Text>
+        <Text style={[styles.subtitle, { color: secondaryText }]}>
           Tambahkan produk untuk mulai berbelanja!
         </Text>
+
         <TouchableOpacity
           style={styles.button}
           onPress={() => router.push("/")}
@@ -32,26 +52,40 @@ export default function Cart() {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor }]}>
+      {/* Tombol toggle theme */}
+      <View style={{ alignItems: "flex-end", marginBottom: 10 }}>
+        <TouchableOpacity onPress={toggleTheme}>
+          <Text style={[styles.themeText, { color: textColor }]}>
+            {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          </Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Daftar produk */}
       <FlatList
         data={cart}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <View style={styles.cartItem}>
+          <View style={[styles.cartItem, { backgroundColor: cardColor }]}>
             <Image source={item.image} style={styles.image} />
             <View style={{ flex: 1 }}>
-              <Text style={styles.name}>{item.name}</Text>
-              <Text style={styles.price}>
+              <Text style={[styles.name, { color: textColor }]}>
+                {item.name}
+              </Text>
+              <Text style={[styles.price, { color: secondaryText }]}>
                 Rp {(item.price * item.quantity).toLocaleString("id-ID")}
               </Text>
             </View>
             <TouchableOpacity onPress={() => removeFromCart(item.id)}>
-              <Text style={styles.remove}>❌</Text>
+              <Text style={[styles.remove, { color: textColor }]}>❌</Text>
             </TouchableOpacity>
           </View>
         )}
+        contentContainerStyle={{ paddingBottom: 100 }}
       />
 
+      {/* Tombol hapus semua */}
       <TouchableOpacity style={styles.clearButton} onPress={clearCart}>
         <Text style={styles.clearText}>Hapus Semua</Text>
       </TouchableOpacity>
@@ -62,8 +96,17 @@ export default function Cart() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F3F1",
     padding: 20,
+  },
+  themeButton: {
+    position: "absolute",
+    top: 50,
+    right: 20,
+    zIndex: 10,
+  },
+  themeText: {
+    fontSize: 16,
+    fontWeight: "600",
   },
   icon: {
     fontSize: 48,
@@ -73,11 +116,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "700",
-    color: "#3E2723",
     textAlign: "center",
   },
   subtitle: {
-    color: "#8B6B61",
     textAlign: "center",
     marginBottom: 20,
   },
@@ -95,7 +136,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 14,
-    backgroundColor: "#fff",
     borderRadius: 10,
     padding: 10,
   },
@@ -108,10 +148,8 @@ const styles = StyleSheet.create({
   name: {
     fontWeight: "600",
     fontSize: 16,
-    color: "#3E2723",
   },
   price: {
-    color: "#8B4513",
     marginTop: 4,
   },
   remove: {
