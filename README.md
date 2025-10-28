@@ -1,3 +1,8 @@
+Nama : I Dewa Gede Mas Bagus Krisnanda
+NIM  : 2301020058
+Teknik Informatika
+
+
 🏺 Krisped – Ceramic Product Management App
 Krisped adalah aplikasi mobile sederhana berbasis React Native (Expo) yang digunakan untuk mengelola produk kerajinan keramik.
 Aplikasi ini mendukung CRUD produk, keranjang belanja, serta dark/light mode menggunakan Zustand sebagai state management.
@@ -47,24 +52,14 @@ Gambar produk proporsional dan otomatis menyesuaikan tampilan.
 
 
 🧩 Teknologi yang Digunakan
-⚛️ React Native (Expo)
-🧭 Expo Router (navigasi multi-tab)
-🗂 Zustand (state management)
-💡 TypeScript
-🎨 React Native StyleSheet
-📸 Expo Image Picker
+- ⚛️ React Native (Expo)
+- 🧭 Expo Router (navigasi multi-tab)
+- 🗂 Zustand (state management)
+- 💡 TypeScript
+- 🎨 React Native StyleSheet
+- 📸 Expo Image Picker
 
 
-# 1️⃣ Clone repository
-git clone https://github.com/username/krisped-app.git
-# 2️⃣ Masuk ke folder proyek
-cd krisped-app
-# 3️⃣ Install dependencies
-npm install
-# atau
-yarn install
-# 4️⃣ Jalankan aplikasi
-npx expo start
 
 
 krisped-app/
@@ -93,6 +88,20 @@ krisped-app/
 │   └── screenshot-home.png   # Screenshot untuk README
 │
 └── README.md
+
+
+
+
+# 1️⃣ Clone repository
+git clone https://github.com/username/krisped-app.git
+# 2️⃣ Masuk ke folder proyek
+cd krisped-app
+# 3️⃣ Install dependencies
+npm install
+# atau
+yarn install
+# 4️⃣ Jalankan aplikasi
+npx expo start
 
 
 
