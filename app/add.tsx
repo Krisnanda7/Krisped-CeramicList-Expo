@@ -36,7 +36,7 @@ export default function AddProductScreen() {
 
     addProduct({ id: nanoid(), name, price: parseInt(price), image });
     Alert.alert("Sukses", "Produk berhasil ditambahkan!");
-    router.push("/");
+    router.push("/listProduct");
   };
 
   return (
