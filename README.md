@@ -57,8 +57,10 @@ Aplikasi ini dikembangkan dengan **Zustand** sebagai state management yang ringa
 <img width="444" height="867" alt="Screenshot 2025-10-29 031910" src="https://github.com/user-attachments/assets/68223652-8a5b-42fd-904d-ba3c97401d3b" />
 <img width="448" height="844" alt="Screenshot 2025-10-29 031934" src="https://github.com/user-attachments/assets/aa9f7f38-0e34-4117-9ffb-2661614c5668" />
 
----
 
+
+
+---
 ## Link Video Loom 
 https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
 
