@@ -3,7 +3,6 @@
 **Developed by:**  
 👨‍💻 I Dewa Gede Mas Bagus Krisnanda  
 🆔 2301020058  
-Link Loom : https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
 
 ---
 
@@ -43,6 +42,9 @@ Aplikasi ini dikembangkan dengan **Zustand** sebagai state management yang ringa
 | 📸 **Expo Image Picker** | Mengambil gambar dari galeri atau kamera. |
 
 ---
+
+## Link Video Loom 
+https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
 
 ## 📱 Tampilan Aplikasi (Preview)
 <img width="427" height="846" alt="Screenshot 2025-10-29 031309" src="https://github.com/user-attachments/assets/c88ba930-64c7-43fb-8794-dffc1fae1918" />
