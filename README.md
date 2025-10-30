@@ -3,6 +3,7 @@
 **Developed by:**  
 👨‍💻 I Dewa Gede Mas Bagus Krisnanda  
 🆔 2301020058  
+Link Loom : https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
 
 ---
 
