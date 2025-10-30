@@ -43,9 +43,6 @@ Aplikasi ini dikembangkan dengan **Zustand** sebagai state management yang ringa
 
 ---
 
-## Link Video Loom 
-https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
-
 ## 📱 Tampilan Aplikasi (Preview)
 <img width="427" height="846" alt="Screenshot 2025-10-29 031309" src="https://github.com/user-attachments/assets/c88ba930-64c7-43fb-8794-dffc1fae1918" />
 <img width="460" height="847" alt="Screenshot 2025-10-29 031650" src="https://github.com/user-attachments/assets/2b3186f2-1cb7-425e-8a11-77d6d6da6a31" />
@@ -59,6 +56,10 @@ https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
 <img width="427" height="851" alt="Screenshot 2025-10-29 031845" src="https://github.com/user-attachments/assets/e558304e-e264-4bb5-8f54-4e4b53657192" />
 <img width="444" height="867" alt="Screenshot 2025-10-29 031910" src="https://github.com/user-attachments/assets/68223652-8a5b-42fd-904d-ba3c97401d3b" />
 <img width="448" height="844" alt="Screenshot 2025-10-29 031934" src="https://github.com/user-attachments/assets/aa9f7f38-0e34-4117-9ffb-2661614c5668" />
+
+## Link Video Loom 
+https://www.loom.com/share/7e96862c897b44e4b32bb5fadc1dc3b0
+
 
 
 ## 📂 Struktur Folder
