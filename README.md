@@ -1,8 +1,7 @@
 # 🏺 KRISPED — Product Management Ceramic App
 
 # **Developed by:**  
-# Nama : I Dewa Gede Mas Bagus Krisnanda  
-# Nim :  2301020058  
+# I Dewa Gede Mas Bagus Krisnanda (2301020058)   
 
 ---
 
